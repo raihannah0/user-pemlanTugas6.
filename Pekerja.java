@@ -22,11 +22,11 @@ public class Pekerja extends Manusia {
     }
 
     public double getGaji() {
-        return gaji + getBonus();
+        return gaji;
     }
 
     public double getPendapatan() {
-        return super.getPendapatan() + getGaji() + (jumlahAnak * 20);
+        return super.getPendapatan() + getBonus() + getGaji() + (jumlahAnak * 20);
     }
 
     public String toString() {
